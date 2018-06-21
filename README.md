@@ -1,4 +1,4 @@
-# CAEN_BaordReadout
+# CAEN_BoardReadout
 To run:
 
 make
