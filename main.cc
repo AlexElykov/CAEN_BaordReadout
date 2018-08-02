@@ -119,7 +119,7 @@ int InitBoard(int link, int board){
   r+= WriteRegister(0x8078, 0x12C, handle);    // N samples before threshold 0x19
   r+= WriteRegister(0x8100, 0x0, handle);      // Acquisition control
   r+= WriteRegister(0x8038, 0x12C, handle);    // Pre-trigger - defines the num of samples pre trigger 0x0
-  r+= WriteRegister(0x81A0, 0x200, handle);    // Dont't really know what this one does
+  r+= WriteRegister(0x81A0, 0x200, handle);    // Status of the LVDS I/O for Busy signal from the digitiser
   //r+= WriteRegister(0x810C, 0x80000000, handle);  // Trigger source/enable mask?!? 
   
   if (r!=0){
